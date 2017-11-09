@@ -1,0 +1,108 @@
+/*
+ * Breakpoint Test
+ * */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+
+/*
+ * Universal Box Sizing with Inheritance: https://css-tricks.com/box-sizing/
+ * */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: tomato;
+  font-family: serif;
+  margin: 0;
+  line-height: 1.8;
+}
+
+h2 {
+  margin:0 0 1em;
+}
+
+p {
+  margin:0 0 1em;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left:0;
+}
+
+.container {
+  background-color: white;
+  opacity: .8;
+  padding: 1em 1em;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.flex-item {
+  width: 47%;
+  margin-bottom: 24px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* iPad portrait */
+@media ( min-width: 768px ) {
+
+  body {
+    background: yellow;
+  }
+
+  .flex-item {
+    width: 31%;
+  }
+}
+
+/*
+ * Fire HD 10 portrait
+@media ( min-width: 800px ) {
+
+  body {
+    background: tomato;
+  }
+
+} */
+
+/* iPad Landscape */
+@media ( min-width: 1024px ) {
+
+  body {
+    background: green;
+  }
+
+  .flex-item {
+    width: 23%;
+  }
+
+}
+
+/* Fire HD 10 Landscape
+@media ( min-width: 1280px ) {
+
+  body {
+    background: purple;
+  }
+
+} */
